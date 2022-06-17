@@ -1,1 +1,1 @@
-# udacity_DS_data_engineering
+# Repository for the udacity data science course, project 2
