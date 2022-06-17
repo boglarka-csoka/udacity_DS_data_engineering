@@ -6,20 +6,20 @@ In this project, we build and optimize an NLP pipeline using the Python. Our goa
 
 ## This repository contains the followings:
 - app
-| - template
-| |- master.html  # main page of web app
-| |- go.html  # classification result page of web app
-|- run.py  # Flask file that runs app
+  - template
+    - master.html  # main page of web app
+    - go.html  # classification result page of web app
+  - run.py  # Flask file that runs app
 
 - data
-|- disaster_categories.csv  # data to process 
-|- disaster_messages.csv  # data to process
-|- process_data.py
-|- DisasterResponse.db   # database to save clean data to
+  - disaster_categories.csv  # data to process 
+  - disaster_messages.csv  # data to process
+  - process_data.py
+  - DisasterResponse.db   # database to save clean data to
 
 - models
-|- train_classifier.py
-|- classifier.pkl  # saved model 
+  - train_classifier.py
+  - classifier.pkl  # saved model 
 
 ## Summary
 This dataset contains help messages text data.To preprocess it, we first create 'DisasterResponse.db': cleaning and mergeing 2 datasets (disaster_categories.csv,disaster_messages.csv). Then create a model ('classifier.pkl') to predict the category of new (unseen) text.
