@@ -22,6 +22,14 @@ In the screen the user can add a text message and the program will categorize it
   - train_classifier.py
   - classifier.pkl  # saved model 
 
+## Code to run the python files
+
+process_data.py: `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+
+train_classifier.py: `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+
+run.py: `python run.py`
+
 ## Summary
 This dataset contains help messages text data.To preprocess it, we first create 'DisasterResponse.db': cleaning and mergeing 2 datasets (disaster_categories.csv,disaster_messages.csv). Then create a model ('classifier.pkl') to predict the category of new (unseen) text messages.
 This model is trained and optimized with random forest estimator. I evaluate the model using precision, recall and f1 score for each label.
