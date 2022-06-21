@@ -76,6 +76,8 @@ def clean_data(df):
 
     # drop duplicates
     df=df.drop_duplicates() 
+    # drop related column's 2 values
+    df = df[df.related != 2]
 
     return df
 
